@@ -6,7 +6,7 @@
 /*   By: vmyshko <vmyshko@student.codam.nl>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 17:57:50 by vmyshko           #+#    #+#             */
-/*   Updated: 2023/10/31 16:59:20 by vmyshko          ###   ########.fr       */
+/*   Updated: 2023/11/09 11:49:12 by vmyshko          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -187,7 +187,7 @@ int *arr_calloc = (int *)ft_calloc(5, sizeof(int));
 for(int i = 0; i<5; i++)
 printf("%d", arr_calloc[i]);
 printf("\n");
-free(arr_calloc);
+free(arr_calloc); // ALWAYS CLEAN MALLOC
 }
 
 static void test_strdup()
@@ -273,7 +273,7 @@ static int test_mapi ()
 	free(result);
 	return (0);
 }
-// static int bonus_check(void)
+// static int BONUS_check(void)
 // {
 // 	char	*str;
 // 	char	*str2;
